@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Matthieu&Rita</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- The Modal -->
+    <div id="myModalImg" class="modal">
+        <span class="closeImg">&times;</span>
+        <img class="modal-content1" id="img01">
+    </div>
+
+    <div id="myModalVid" class="modal">
+        <span class="closeVid">&times;</span>
+        <iframe allow='autoplay' class="modal-content2" id="vid01"></iframe>
+    </div>
+    
+    <div class="container">
+
+        <!-- Gallery -->
+        <div class="gallery-tab">
+            <div class="tab-navbar">
+                <div class="tab-icon">
+                    <img src="/images/gallery.png">
+                    <h4>Clips</h4>
+                </div>
+                <div class="button-exit">
+                    <button class="exit" onclick="hideGalleryTab()">
+                        <h1>&#10006;</h1>
+                    </button>
+                </div>
+            </div>         
+            <div class="tab-content-gallery">
+                <div id="one" class="gallery-div">
+                    <iframe id="vid1" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/juUpxV7L5jieCFYnm?invite=cr-MSxVMHUsMTU5MTk5NzU3'></iframe>
+                    <h4>Team MVP</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="two" class="gallery-div">
+                    <iframe id="vid2" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/juV0FoLPd0ma1QBOr?invite=cr-MSxqUm0sMTU5MTk5NzU3'></iframe>
+                    <h4>Her? Him? Them? They? It?</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="three" class="gallery-div">
+                    <iframe id="vid3" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/juWvswIFC_WPtw6Re?invite=cr-MSxBOXYsMTU5MTk5NzU3'></iframe>
+                    <h4>REDE</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="four" class="gallery-div">
+                    <iframe id="vid4" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/jvJYPltqCMjEHxZad?invite=cr-MSxIa3osMTU5MTk5NzU3'></iframe>
+                    <h4>Astra VA</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="five" class="gallery-div">
+                    <iframe id="vid5" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/jDasJUcwoRJSsU7I9?invite=cr-MSxVR0YsMTU5MTk5NzU3'></iframe>
+                    <h4>WHAT?</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="six" class="gallery-div">
+                    <iframe id="vid6" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/jKAZ3cJo5SdwRk_fF?invite=cr-MSx4bGcsMTU5MTk5NzU3'></iframe>
+                    <h4>Muscle Pwincess</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="seven" class="gallery-div">
+                    <iframe id="vid7" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/jKvBXdbxsQoSZZdFP?invite=cr-MSxzS1UsMTU5MTk5NzU3'></iframe>
+                    <h4>LARA AGAIN</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="eight" class="gallery-div">
+                    <iframe id="vid8" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/jMbSbajWIxtA-ihmz?invite=cr-MSxGVkUsMTU5MTk5NzU3'></iframe>
+                    <h4>5 Duelists</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="nine" class="gallery-div">
+                    <iframe id="vid9" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/jviUB8ve1K53dgB0f?invite=cr-MSxXa0gsMTU5MTk5NzU3'></iframe>
+                    <h4>CMON CMON CMON</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="ten" class="gallery-div">
+                    <iframe id="vid10" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/k0kAMfaU5iEPZSf9q?invite=cr-MSxrNWIsMTU5MTk5NzU3'></iframe>
+                    <h4>PICTUREEE</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="eleven" class="gallery-div">
+                    <iframe id="vid11" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/k0kEx0faVL5IAjQz3?invite=cr-MSxkSGIsMTU5MTk5NzU3'></iframe>
+                    <h4>You being you!</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="twelve" class="gallery-div">
+                    <iframe id="vid12" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/k0l3fO9S6DeJs-Z0_?invite=cr-MSxobDUsMTU5MTk5NzU'></iframe>
+                    <h4>Russian</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="thirteen" class="gallery-div">
+                    <iframe id="vid13" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/jI6aYTd4XGstsaHhO?invite=cr-MSxJTnosMTU5MTk5NzU3'></iframe>
+                    <h4>Northen Lights</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="fourteen" class="gallery-div">
+                    <iframe id="vid14" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/jI7zrajq6RaN1lIjS?invite=cr-MSxXcmIsMTU5MTk5NzU3'></iframe>
+                    <h4>Louis Texting</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="fifteen" class="gallery-div">
+                    <iframe id="vid15" allow='autoplay' allowfullscreen src='https://medal.tv/games/valorant/clip/k0lkl990wa5-A7Cg2?invite=cr-MSxNdkgsMTU5MTk5NzU3'></iframe>
+                    <h4>Like Gekko?</h4>
+                    <div class="cover-vid"></div>
+                </div>
+                <div id="sixteen" class="gallery-div">
+                    <iframe id="vid16" allow='autoplay' allowfullscreen src='https://medal.tv/games/schedule-i/clip/k0lt1kBStNB_Ta_r8?invite=cr-MSxsaWwsMTU5MTk5NzU3'></iframe>
+                    <h4>Weird Jumping</h4>
+                    <div class="cover-vid"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var modalI = document.getElementById("myModalImg");
+            var modalV = document.getElementById("myModalVid");
+            var modalImg = document.getElementById("img01");
+            var modalVid = document.getElementById("vid01");
+            var vid1 = document.getElementById("one");
+            var zoomy1 = document.getElementById("vid1");
+            var vid2 = document.getElementById("two");
+            var zoomy2 = document.getElementById("vid2");
+            var vid3 = document.getElementById("three");
+            var zoomy3 = document.getElementById("vid3");
+            var vid4 = document.getElementById("four");
+            var zoomy4 = document.getElementById("vid4");
+            var vid5 = document.getElementById("five");
+            var zoomy5 = document.getElementById("vid5");
+            var vid6 = document.getElementById("six");
+            var zoomy6 = document.getElementById("vid6");
+            var vid7 = document.getElementById("seven");
+            var zoomy7 = document.getElementById("vid7");
+            var vid8 = document.getElementById("eight");
+            var zoomy8 = document.getElementById("vid8");
+            var vid9 = document.getElementById("nine");
+            var zoomy9 = document.getElementById("vid9");
+            var vid10 = document.getElementById("ten");
+            var zoomy10 = document.getElementById("vid10");
+            var vid11 = document.getElementById("eleven");
+            var zoomy11 = document.getElementById("vid11");
+            var vid12 = document.getElementById("twelve");
+            var zoomy12 = document.getElementById("vid12");
+            var vid13 = document.getElementById("thirteen");
+            var zoomy13 = document.getElementById("vid13");
+            var vid14 = document.getElementById("fourteen");
+            var zoomy14 = document.getElementById("vid14");
+            var vid15 = document.getElementById("fifteen");
+            var zoomy15 = document.getElementById("vid15");
+            var vid16 = document.getElementById("sixteen");
+            var zoomy16 = document.getElementById("vid16");
+
+            vid1.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy1.src;
+            }
+            vid2.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy2.src;
+            }
+            vid3.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy3.src;
+            }
+            vid4.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy4.src;
+            }
+            vid5.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy5.src;
+            }
+            vid6.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy6.src;
+            }
+            vid7.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy7.src;
+            }
+            vid8.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy8.src;
+            }
+            vid9.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy9.src;
+            }
+            vid10.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy10.src;
+            }
+            vid11.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy11.src;
+            }
+            vid12.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy12.src;
+            }
+            vid13.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy13.src;
+            }
+            vid14.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy14.src;
+            }
+            vid15.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy15.src;
+            }
+            vid16.onclick = function() {
+            modalV.style.display = "block";
+            modalVid.src = zoomy16.src;
+            }
+
+            var span = document.getElementsByClassName("closeImg")[0];
+            span.onclick = function() { 
+            modalI.style.display = "none";
+            }
+
+            var span2 = document.getElementsByClassName("closeVid")[0];
+            span2.onclick = function() { 
+            modalV.style.display = "none";
+            modalVid.src = "";
+            }
+        </script>
+
+        <!-- Note -->
+        <div class="note-tab">
+            <div class="tab-navbar">
+                <div class="tab-icon">
+                    <img src="/images/love.png">
+                    <h4>I love you!~♥</h4>
+                </div>
+                <div class="button-exit">
+                    <button class="exit" onclick="hideNoteTab()">
+                        <h1>&#10006;</h1>
+                    </button>
+                </div>
+            </div>         
+            <div class="tab-content-note">
+                <h2>Hey baby!</h2>
+                <p class="tight-p">Its been officially one month since we started dating!</p>
+                <br>
+                <p class="tight-p">I know it hasn’t been a long time and that 1 month is still a small mark! But honestly, I just wanted to make something small just to show you how much I appreciate your company and you as a whole!</p>
+                <br>
+                <p class="tight-p">When we meet I thought you were a funny chill guy and genuinely had lots of fun playing with you and Louis. Thanks god Louis and the 5+ games me and him got queued in a row because he was the reason why we both managed to meet each other ♥</p>
+                <br>
+                <p class="tight-p">Even after meeting for the first time, it took us some time to be considered proper friends- for a while you were just a friend of friend I would see once in a blue moon. But then, in January, suddenly we became good friends after I spammed you everyday to game with me!</p>
+                <br>
+                <p class="tight-p">Suddenly, it became a routine.</p>
+                <br>
+                <p class="tight-p">The late nights gaming with both of you was the best time I was having in a while- After a stressful day at work, knowing that I would go home and then have a good time with you guys was my motivation!!!</p>
+                <br>
+                <p class="tight-p">I was genuinely at rock bottom at the time, and having you there helped me get through every day. Even tho you were DRY AS HELL at the beginning XD</p>
+                <br>
+                <p class="tight-p">But then, suddenly, we started getting closer and closer. The way you would get worried about me and message me when i would go quiet was really sweet. The way that you stuck with our plans through the day even tho you had people inviting you made me genuinely happy.</p>
+                <br>
+                <p class="tight-p">The jokes, the watching time, the games, the long conversations, the whole time we spent together overall started getting better and better. You became the highlight of my day without me even realizing. I would go to work excited with the thought that after the 9h stuck at that mall I would get home and spend time with you.</p>
+                <br>
+                <p class="tight-p">I started feeling more and more comfortable around you. You were, and still are, my cozy place where I know I can go whenever I need peace of mind.</p>
+                <br>
+                <p class="tight-p">Before, whenever I would get stressed or upset, I would rather take alone time to breath in and out. But for some, forsaken reason, every time I hear your voice it makes me relax... Look at the other day as an example.. You know- When I was upset for doing 1h30 more at work because of the guy. I was mad the whole drive home, but as soon as I sat on my chair and heard your voice, i calmed down in a matter of minutes.</p>
+                <br>
+                <p class="tight-p">While I was cooking the eKitten Exp later on this thought crossed my mind: "Damn, took only a few words and I don't feel upset anymore". Its craaazy xD</p>
+                <br>
+                <p class="tight-p">We both have lots of issues, and honestly already had 1 or 2 arguments about situations we both didn't agree on. But its a part of it! What matters is that we managed to get past it and are doing great.</p>
+                <br>
+                <p class="tight-p">Thank you for being always there for me and for being this amazing person <3</p>
+                <br>
+                <p class="tight-p">I know I keep repeating this, but goddamn, I don't think I could live without you anymore. I am already counting the days until we finally meet in real life! I bet it will be the best weekend!</p>
+                <br>
+                <p class="tight-p">I really just want you to know that:</p>
+                <p class="tight-p">I love your voice.</p>
+                <p class="tight-p">I love your laugh.</p>
+                <p class="tight-p">I love your eyes.</p>
+                <p class="tight-p">I love your mouth.</p>
+                <p class="tight-p">I love your nose.</p>
+                <p class="tight-p">I love your body.</p>
+                <p class="tight-p">I love your hair.</p>
+                <p class="tight-p">I love how open you are with me.</p>
+                <p class="tight-p">I love your jealous side.</p>
+                <p class="tight-p">I love how cute you sound when you are upset.</p>
+                <p class="tight-p">I love your cute expressions.</p>
+                <p class="tight-p">I love your zesty side.</p>
+                <p class="tight-p">I love it when you are nervous.</p>
+                <p class="tight-p">I love it when you make me nervous.</p>
+                <p class="tight-p">I love your grumpy side.</p>
+                <p class="tight-p">I love you when you are sleepy.</p>
+                <p class="tight-p">I love the way you get worried about the smallest things.</p>
+                <p class="tight-p">I love the way you take care of me.</p>
+                <p class="tight-p">I love everything about you.</p>
+                <br>
+                <p class="tight-p">But above them all, I love your<b>smile</b>the most!</p>
+                <p class="tight-p"> Its what I want to keep the most. You are really reeeaalllyyy beautiful when you smile Matthieu.</p>
+                <br>
+                <p class="tight-p">I can't wait to share the rest of my life with you ♥</p>
+                <p class="tight-p">This time, I am really sure this is it.</p>
+                <p class="tight-p">You feel different. You are different.</p>
+                <p class="tight-p">You are the one for me and I am the one for you ♥</p>
+                <p class="tight-p">So let's make it work, ya?</p>
+                <p class="tight-p bold">Happy 1st month of many many more baby!!~</p>       
+            </div>
+        </div>
+
+        <div class="german-tab">
+            <div class="tab-navbar">
+                <div class="tab-icon">
+                    <img src="/images/message.png">
+                    <h4>GERMAN LESSONS</h4>
+                </div>
+                <div class="button-exit">
+                    <button class="exit" onclick="hideGermanTab()">
+                        <h1>&#10006;</h1>
+                    </button>
+                </div>
+            </div>         
+            <div class="tab-content-german">
+                <p class="tight-p">YES/NO</p>
+                <p class="tight-p">ja!doch!</p>
+                <p class="tight-p">nein!</p>
+                <br>
+                <p class="tight-p">HOW ARE YOU</p>
+                <p class="tight-p">wie gehts dir - vie gets dier</p>
+                <br>
+                <p class="tight-p">SON OF A BITCH</p>
+                <p class="tight-p">nuttensohn (ns)</p>
+                <p class="tight-p">hurensohn (hs)</p>
+                <br> 
+                <p class="tight-p">REDE/zustimmend</p>
+                <p class="tight-p">approvingly</p>
+                <br>
+                <p class="tight-p">SHUT UP</p>
+                <p class="tight-p">hdf - shut up</p>
+                <p class="tight-p">halt dein maul - halt dain maue</p>
+                <p class="tight-p">halt deine freese (shut up)</p>
+                <br>
+                <p class="tight-p">FUCK YOU</p>
+                <p class="tight-p">fick dich</p>
+                <br>
+                <p class="tight-p">SHIT</p>
+                <p class="tight-p">scheiße - schaiza</p>
+                <br>
+                <p class="tight-p">NO YOU
+                <p class="tight-p">selber - s</p>
+                <p class="tight-p">elba</p>
+                <br>
+                <p class="tight-p">WASSUP</p>
+                <p class="tight-p">was geht ab</p>
+                <br>
+                <p class="tight-p">TRUE</p>
+                <p class="tight-p">Stimmt</p>
+            </div>
+        </div>
+
+
+        <div class="count-tab">
+            <div class="tab-navbar">
+                <div class="tab-icon">
+                    <img src="/images/message.png">
+                    <h4>Countdown</h4>
+                </div>
+                <div class="button-exit">
+                    <button class="exit" onclick="hideCountTab()">
+                        <h1>&#10006;</h1>
+                    </button>
+                </div>
+            </div>         
+            <div class="tab-content-count">
+                <h4 id="countdown" class="countdown"></h4>
+                <b>Time left for us to be together!~♥</b>
+            </div>
+        </div>
+        
+        <div class="icons-container">
+            <button class="icon gallery" onclick=" showGalleryTab(); hideNoteTab(); hideGermanTab(); hideCountTab()">
+                <img src="/images/gallery.png">
+                <h4>Clips</h4>
+            </button>
+            <button class="icon note" onclick="showNoteTab(); hideGalleryTab(); hideGermanTab(); hideCountTab()">
+                <img src="/images/love.png">
+                <h4>I love you!~♥</h4>
+            </button>
+            <button class="icon german" onclick="showGermanTab(); hideGalleryTab(); hideNoteTab(); hideCountTab()">
+                <img src="/images/message.png">
+                <h4>GERMAN LESSONS</h4>
+            </button>
+            <button class="icon count" onclick="showCountTab(); hideGalleryTab(); hideNoteTab(); hideGermanTab();">
+                <img src="/images/count.png">
+                <h4>Countdown</h4>
+            </button>
+        </div>
+
+        <!-- NAVBAR -->
+        <div class="nav-bar">
+
+            <div class="windows-button">
+                <img src="images/IconWindows.png">
+                <h3>02/03/2025</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

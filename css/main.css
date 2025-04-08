@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;}
+  
+::-webkit-scrollbar-track {
+    background: black;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--light-purple);
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--purple);
+    cursor: pointer;
+}
+
+:root {
+    --dark-purple: #0B0205;
+    --purple: #2C1B47;
+    --light-purple: #724C9D;
+    --pink: #DCCAE9;
+    --text-color: #0B0205;
+    --dark-theme: #151515;
+    --light-blue: #9ecefd;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 1s;
+    background-color: var(--dark-theme);
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image:url('../images/background.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: left center;
+    color: var(--pink);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* TABS NAVBARS*/
+.note-tab, .gallery-tab, .german-tab, .count-tab{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: var(--white);
+    border: 0.2rem solid var(--light-purple);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 1rem;
+}
+
+.tab-navbar{
+    width: 100%;
+    height: auto;
+    background-color: var(--light-purple);
+    color: var(--dark-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.tab-icon{
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 0.35rem;
+}
+
+.tab-icon h4{
+    color: var(--white);
+}
+
+.tab-icon img{
+    width: auto;
+    height: 3rem;
+    margin-left: 1rem; 
+}
+
+.button-exit{
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1rem; 
+    width: 100%; 
+}
+
+.button-exit button {
+    background-color: transparent;
+    border: none;
+    font-size: 0.6rem;
+    color: var(--white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-exit button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.tab-content{
+    padding: 1rem;
+    background-color: var(--dark-theme);
+    color: var(--white);
+}
+
+.tab-content-resume{
+    padding: 0;
+    height: auto;
+}
+
+.tab-content-resume-object{
+    width: 100%;
+    height: auto;
+}
+
+/* NAVBAR */
+
+.nav-bar {
+    width: 100%;
+    height: 4.5rem;
+    background-color: var(--dark-purple);
+    color: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.windows-button {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; 
+    gap: 1rem;
+}
+
+.windows-button img {
+    width: auto;
+    height: 4rem;
+    margin-left: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.windows-button img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ICONS */
+
+.icons-container{
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 16rem;
+    height: auto;
+}
+
+.icons-container button{
+    background-color: transparent;
+    border: none;
+}
+
+.icon {
+    position: relative; 
+    display: inline-block;
+    flex-direction: column;
+    width: 8rem;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon h4{
+    color: var(--pink);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;margin: 0.3rem 0 0 0; /* Ensures the text is close to the image */
+    font-size: 0.9rem; /* Adjust size if needed */
+}
+
+.linkedin{
+    text-decoration: none;
+}
+
+.icon img {
+    width: auto;
+    height: 8rem;
+}
+
+.icon:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+
+.icon:hover::after {
+    content: '';
+    position: absolute;
+    border-radius: 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light-blue);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.icon:hover::after {
+    opacity: 0.1;
+}
+
+/* GALLERY */
+
+.gallery-tab{
+    display: none;
+}
+
+.tab-content-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    padding: 2rem 4rem;
+    background-color: var(--dark-theme);
+    width: 40rem;
+    height: 25rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.gallery-div{
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-div img{
+    margin: 0;
+    width: auto;
+    height: 8rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-div:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+.gallery-div::after {
+    content: '';
+    position: absolute;
+    border-radius: 0.3rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light-blue);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gallery-div:hover::after {
+    opacity: 0.1;
+}
+
+.gallery-div h4{
+    color: white;
+    font-weight: 500;
+}
+
+.gallery-div iframe{
+    width: 15rem;
+    height: 9rem;
+    border: none;
+}
+
+.cover-vid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* NOTE */
+
+.note-tab{
+    display: none;
+}
+
+.tab-content-note{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    padding: 2rem 4rem;
+    background-color: var(--dark-theme);
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+
+.tab-content-note b{
+    margin: 0rem 0.6rem 0.6rem 0.6rem;
+}
+
+.tab-content-note h2{
+    font-size: 40px;
+}
+
+.tight-p{
+    margin: 0;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+/* GERMAN */
+
+.german-tab{
+    display: none;
+}
+
+.tab-content-german{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    padding: 2rem 4rem;
+    background-color: var(--dark-theme);
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+
+.tab-content-note b{
+    margin: 0rem 0.6rem 0.6rem 0.6rem;
+}
+
+.tab-content-note h2{
+    font-size: 40px;
+}
+
+.tight-p{
+    margin: 0;
+}
+
+/* COUNTDOWN */
+
+.count-tab{
+    display: none;
+}
+
+.tab-content-count{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 7rem;
+    padding: 0.5rem 2rem 2rem;
+    background-color: var(--dark-theme);
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.tab-content-count h4{
+    font-size: 23px;
+}
+
+.tab-content-count b{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* MODAL */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    padding-top: 3.5rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content1 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border: none;
+  }
+
+  .modal-content2{
+    margin: auto;
+    display: block;
+    height: 40rem;
+    width: 60rem;
+    border: none;
+  }
+  
+  .modal-content1 #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  .modal-content2 #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  .closeImg {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .closeImg:hover,
+  .closeImg:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .closeVid{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .closeVid:hover,
+  .closeVid:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+    p {
+        font-size: 16px;
+    }
+
+    .tab-content-gallery{
+        width: 50vw;
+        height: 20rem;
+    }
+
+    .tab-content-german{
+        width: 50vw;
+        height: 20rem;
+    }
+
+    .tab-content-note{
+        width: 70vw;
+        height: 20rem;
+    }
+
+    .tab-content-note{
+        padding: 1.1rem;
+    }
+
+    .modal-content2{
+        height: 30rem;
+        width: 2rem;
+    }
+
+    .icons-container{
+        padding: 0.5rem;
+    }
+
+    .icon h4{
+        font-size: 14px;
+    }
+    
+    .icon img {
+        width: auto;
+        height: 6rem;
+    }
+
+    .modal-content2{
+        height: 10rem;
+        width: 70vw;
+    }
+
+    .modal{
+        padding-top: 20rem;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (orientation: portrait) {
+    .tab-content-gallery, .tab-content-note, .tab-content-german{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .modal-content2{
+        height: 20rem;
+        width: 30rem;
+    }
+
+    .modal{
+        padding-top: 15rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+
+
+    .german-tab, .note-tab, .gallery-tab{
+        top: 27%;
+    }
+    
+    .tab-content-gallery, .tab-content-note, .tab-content-german{
+        width: 25rem;
+        height: 3.5rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+
+    .tab-content-note, .tab-content-german, .tab-content-galler{
+        width: 35rem;
+        height: 30rem;
+    }
+
+    .modal-content2{
+        height: 30rem;
+        width: 40rem;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .note-tab, .gallery-tab, .german-tab{
+        top: 42%;
+    }
+    
+    .tab-content-gallery, .tab-content-note, .tab-content-german {
+        width: 25rem;
+        height: 10rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (orientation: portrait) {
+    .tab-content-gallery, .tab-content-note, .tab-content-german{
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .modal-content2{
+        height: 30rem;
+        width: 40rem;
+      }
+}
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .tab-content-gallery, .tab-content-note, .tab-content-german{
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .modal-content2{
+        height: 30rem;
+        width: 40rem;
+      }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (orientation: portrait) {
+    .tab-content-gallery{
+        width: 40rem;
+        height: 25rem;
+    }
+
+    .tab-content-note, .tab-content-german{
+        width: 70rem;
+        height: 25rem;
+    }
+}
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+    .note-tab, .gallery-tab, .german-tab{
+        top: 42%;
+    }
+    
+    .tab-content-gallery, .tab-content-note, .tab-content-german{
+        width: 50rem;
+        height: 25rem;
+    }
+}
