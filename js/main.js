@@ -18,6 +18,16 @@ function hideNoteTab() {
     workTab.style.display = 'none';
 }
 
+function showCaseTab() {
+    const workTab = document.querySelector('.case-tab');
+    workTab.style.display = 'block';
+}
+
+function hideCaseTab() {
+    const workTab = document.querySelector('.case-tab');
+    workTab.style.display = 'none';
+}
+
 function showGermanTab() {
     const workTab = document.querySelector('.german-tab');
     workTab.style.display = 'block';
