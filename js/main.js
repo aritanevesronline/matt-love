@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 //COUNTDOWN
 
-var countDownDate = new Date("May 16, 2025 15:00:00").getTime();
-var togetherCount = new Date("May 19, 2025 7:00:00").getTime();
+var countDownDate = new Date("July 12, 2025 22:45:00").getTime();
+var togetherCount = new Date("July 20, 2025 6:15:00").getTime();
 
 var x = setInterval(function () {
 
