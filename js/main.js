@@ -48,23 +48,30 @@ document.addEventListener('DOMContentLoaded', function(event) {
 //COUNTDOWN
 
 var countDownDate = new Date("May 16, 2025 15:00:00").getTime();
+var togetherCount = new Date("May 19, 2025 7:00:00").getTime();
 
-var x = setInterval(function() {
+var x = setInterval(function () {
 
-  var now = new Date().getTime();
+    var now = new Date().getTime();
 
-  var distance = countDownDate - now;
+    var distance = countDownDate - now;
+    var togetherTime = togetherCount - now;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+    document.getElementById('countdown').innerHTML = days + "d" + hours + "h " + minutes + "m " + seconds + "s ";
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "FINALLY!!";
-  }
+    if (distance < 0 & togetherTime > 0) {
+        clearInterval(x);
+        document.getElementById('countdown').innerHTML = "FINALLY!!";
+    } else if (distance < 0 & togetherTime < 0) {
+        clearInterval(x);
+        document.getElementById('countdown').innerHTML = "Awaiting new date..."
+    }
+
+    console.log(distance);
+    console.log(togetherTime);
 }, 1000);
