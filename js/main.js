@@ -48,6 +48,16 @@ function hideCountTab() {
     workTab.style.display = 'none';
 }
 
+function showMissTab() {
+    const workTab = document.querySelector('.miss-tab');
+    workTab.style.display = 'block';
+}
+
+function hideMissTab() {
+    const workTab = document.querySelector('.miss-tab');
+    workTab.style.display = 'none';
+}
+
 //FADE IN
 
 document.addEventListener('DOMContentLoaded', function(event) {
@@ -85,3 +95,4 @@ var x = setInterval(function () {
     console.log(distance);
     console.log(togetherTime);
 }, 1000);
+
