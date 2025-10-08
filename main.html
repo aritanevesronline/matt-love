@@ -460,33 +460,113 @@
             </div>
         </div>
 
-        <div class="icons-container">
+                        <!-- Miss -->
+        <div class="miss-tab">
+            <div class="tab-navbar">
+                <div class="tab-icon">
+                    <img src="/images/love.png">
+                    <h4>I love you!~♥</h4>
+                </div>
+                <div class="button-exit">
+                    <button class="exit" onclick="hideMissTab()">
+                        <h1>&#10006;</h1>
+                    </button>
+                </div>
+            </div>
+            <div class="tab-content-note">
+                <h2>Hello Matthieu</h2>
+                <p class="tight-p">I am not sure if you will ever check this website again, I wouldn't
+                    be surprised if you already closed the tab and lost it forever.
+                </p>
+                <br>
+                <p class="tight-p">I know its really hypocritical of me to write this even though theres a
+                    huge chance you will never get to see it. But I just wanted to say, that I do love you and I
+                    do regret breaking up with you because missing you for the past weeks has been so hard,
+                    you have been the best person/friend/boyfriend I could ever asked for.
+                </p>
+                <br>
+                <p class="tight-p">You were literally the right person, but sadly not at the right time.</p>
+                <br>
+                <p class="tight-p">As I said before, I would love to keep you in my life. Before we were
+                    dating, we were friends. And you were there for me when I needed you the most, and
+                    I couldn't be more thankful for that. You literally saved me.
+                </p>
+                <br>
+                <p class="tight-p">I genuinly wish we could have had a different ending, a
+                    different story. But we were not ready for each other, we made each other feel
+                    awful. And everything escalated so quickly that it got out of control.
+                </p>
+                <br>                
+                <p class="tight-p">And I am deeply sorry for that.</p>
+                <br>
+                <p class="tight-p">Thank you for being this amazing person I could always count on.
+                    Thank you for all the fun gossip. Thank you for all the fun jokes and trolling 
+                    we did together. Thank you for making me understand that I deserved to get treated
+                    better than I ever did before. Thank you for all the patience. Thank you for all the 
+                    time we spent together. Thank you for all the smiles and laughs. I couldnt be more
+                    grateful for any of it.
+                </p>
+                <br>
+                <p class="tight-p">Its going to be awful being without you. Its going to feel terrible. 
+                    I got so used to the idea of havin you around at all time, that now being without you
+                    feels like I am missing a piece of myself.
+                </p>
+                <br>
+                <p class="tight-p">But, even tho I miss you and regret losing you. I do not regret my
+                    decision... Because I do genuinly think it was the right one, at least for the two of us.
+                    We were toxic for each other. We could not communicate properly. And as we said multiple times,
+                    communication is the key. And... We were a keyless door.
+                </p>
+                <br>
+                <p class="tight-p">I will work on myself. Find a job. Get maybe a car. Start a carreer.
+                    Start to love myself more so I dont project my insecurities on other people. I will try
+                    to be someone different. And, if one day... You want to reconnect... It doesn't need
+                    to be as lovers; friends is more than enough. I would love to catch up again with you.
+                </p>
+                <br>
+                <p class="tight-p">I would love to talk with you again. It doesn't matter if you message me in
+                    one or two days, our three or four years. I will always be here.
+                </p>
+                <br>
+                <p class="tight-p">Thank you for making me believe love is real.</p>
+                <p class="tight-p">And I am sorry for not being able to be the person you needed.</p>
+                <br>
+                <p class="tight-p">Sincerely,</p>
+                <p class="tight-p">Rita</p>
+            </div>
+        </div>
+
+<div class="icons-container">
             <button class="icon gallery"
-                onclick=" showGalleryTab(); hideNoteTab(); hideGermanTab(); hideCountTab();  hideCaseTab();">
+                onclick=" showGalleryTab(); hideNoteTab(); hideGermanTab(); hideCountTab();  hideCaseTab(); hideMissTab();">
                 <img src="/images/gallery.png">
                 <h4>Clips</h4>
             </button>
             <button class="icon note"
-                onclick="showNoteTab(); hideGalleryTab(); hideGermanTab(); hideCountTab();  hideCaseTab();">
+                onclick="showNoteTab(); hideGalleryTab(); hideGermanTab(); hideCountTab();  hideCaseTab(); hideMissTab();">
                 <img src="/images/love.png">
                 <h4>I love you!~♥</h4>
             </button>
             <button class="icon german"
-                onclick="showGermanTab(); hideGalleryTab(); hideNoteTab(); hideCountTab(); hideCaseTab();">
+                onclick="showGermanTab(); hideGalleryTab(); hideNoteTab(); hideCountTab(); hideCaseTab(); hideMissTab();">
                 <img src="/images/message.png">
                 <h4>GERMAN LESSONS</h4>
             </button>
             <button class="icon count"
-                onclick="showCountTab(); hideGalleryTab(); hideNoteTab(); hideGermanTab(); hideCaseTab();">
+                onclick="showCountTab(); hideGalleryTab(); hideNoteTab(); hideGermanTab(); hideCaseTab(); hideMissTab();">
                 <img src="/images/count.png">
                 <h4>Countdown</h4>
             </button>
             <button class="icon note"
-                onclick="showCaseTab(); hideGalleryTab(); hideGermanTab(); hideCountTab(); hideNoteTab();">
+                onclick="showCaseTab(); hideGalleryTab(); hideGermanTab(); hideCountTab(); hideNoteTab(); hideMissTab();">
                 <img src="/images/Monkey.png">
                 <h4>In case you see this!</h4>
             </button>
-
+                        <button class="icon note"
+                onclick="showMissTab(); hideGalleryTab(); hideGermanTab(); hideCountTab(); hideNoteTab(); hideCaseTab();">
+                <img src="/images/conv.png">
+                <h4>I'm sorry</h4>
+            </button>
         </div>
 
         <!-- NAVBAR -->
@@ -503,4 +583,5 @@
     <script src="/js/main.js"></script>
 </body>
 </html>
+
 
