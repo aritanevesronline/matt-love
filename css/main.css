@@ -58,7 +58,7 @@ body {
 .case-tab,
 .gallery-tab,
 .german-tab,
-.count-tab {
+.count-tab, .miss-tab {
     display: none;
     position: absolute;
     top: 50%;
@@ -326,7 +326,7 @@ body {
 /* NOTE & CASE */
 
 .note-tab,
-.case-tab {
+.case-tab, .miss-tab {
     display: none;
 }
 
@@ -610,7 +610,7 @@ body {
     .german-tab,
     .note-tab,
     .gallery-tab,
-    .case-tab {
+    .case-tab, .miss-tab {
         top: 27%;
     }
 
@@ -643,7 +643,7 @@ body {
     .note-tab,
     .gallery-tab,
     .german-tab,
-    .case-tab {
+    .case-tab, .miss-tab {
         top: 42%;
     }
 
@@ -705,7 +705,7 @@ body {
     .note-tab,
     .gallery-tab,
     .german-tab,
-    .case-tab {
+    .case-tab, .miss-tab {
         top: 42%;
     }
 
@@ -716,3 +716,4 @@ body {
         height: 25rem;
     }
 }
+
