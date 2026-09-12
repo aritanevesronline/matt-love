@@ -89,7 +89,7 @@ var x = setInterval(function () {
         document.getElementById('countdown').innerHTML = "FINALLY!!";
     } else if (distance < 0 & togetherTime < 0) {
         clearInterval(x);
-        document.getElementById('countdown').innerHTML = "I can't get over you- At all..."
+        document.getElementById('countdown').innerHTML = "I can't get over you..."
     }
 
     console.log(distance);
